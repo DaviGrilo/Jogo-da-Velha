@@ -1,6 +1,6 @@
 let gameBoard = [];
 let currentPlayer = 'x';
-let player = 'x';  // Player choice
+let player = 'x';  
 let gameOver = false;
 let vsMachine = false;
 
@@ -17,7 +17,6 @@ function startGame(machine) {
     resetGame();
 
     if (vsMachine && player === 'o') {
-        // Player chose 'o', so the machine should start with 'x'
         currentPlayer = 'x';
         setTimeout(makeMachineMove, 500);
     }
